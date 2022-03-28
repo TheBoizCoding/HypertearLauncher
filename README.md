@@ -1,6 +1,4 @@
-# HyperTear Launcher
-
-A fanmade launcher for HyperTear
+# launcher
 
 ## Project setup
 ```
