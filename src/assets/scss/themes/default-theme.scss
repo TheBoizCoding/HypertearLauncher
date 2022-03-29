@@ -1,3 +1,8 @@
+//######################
+//###     Basics     ###
+//######################
+
+// fonts
 @font-face {
     font-family: 'Quicksilver';
     src: url('./assets/fonts/Quicksilver.ttf');
@@ -6,65 +11,66 @@ $font-styled: 'Quicksilver';
 $font-main: sans-serif;
 $font-code: monospace;
 
+// basic colors
 $color-white: #fff;
 $color-black: #000000;
-$color-primary:#00c8ff;
-$color-secondary:#0046ff;
+$color-primary:#0011ff;
+$color-secondary:#00d9ff;
 $color-green:#0f0;
 $color-yellow:#ff0;
 $color-red:#ff0000;
 
-$var: darken($color-red, 5%);
 
-:root {
-    
-    // background colors
-    --color-background-primary: $color-red;
-    --color-background-secondary:#fff;
+//######################
+//###    Advanced    ###
+//######################
 
-    // text normal colors
-    --color-text-primary:#fff;
-    --color-text-secondary:#fff;
-    // text hover colors
-    --color-text-primary-hover:#fff;
-    --color-text-secondary-hover:#fff;
+// background colors
+$color-background-primary: desaturate(mix($color-black, $color-primary, 65%), 90%);
+$color-background-secondary: lighten($color-background-primary, 15%);
 
-    // button normal colors
-    --color-button-primary:#fff;
-    --color-button-secondary:#fff;
-    --color-button-sucess:#fff;
-    --color-button-warn:#fff;
-    --color-button-error:#fff;
-    // button hover colors
-    --color-button-primary-hover:#fff;
-    --color-button-secondary-hover:#fff;
-    --color-button-sucess-hover:#fff;
-    --color-button-warn-hover:#fff;
-    --color-button-error-hover:#fff;
-    // button pressed colors
-    --color-button-primary-pressed:#fff;
-    --color-button-secondary-pressed:#fff;
-    --color-button-sucess-pressed:#fff;
-    --color-button-warn-pressed:#fff;
-    --color-button-error-pressed:#fff;
+// text normal colors
+$color-text-primary: $color-white;
+$color-text-secondary: mix($color-white, $color-secondary, 50%);
+// text hover colors
+$color-text-primary-hover:#fff;
+$color-text-secondary-hover:#fff;
+
+// button normal colors
+$color-button-primary:#fff;
+$color-button-secondary:#fff;
+$color-button-sucess:#fff;
+$color-button-warn:#fff;
+$color-button-error:#fff;
+// button hover colors
+$color-button-primary-hover:#fff;
+$color-button-secondary-hover:#fff;
+$color-button-sucess-hover:#fff;
+$color-button-warn-hover:#fff;
+$color-button-error-hover:#fff;
+// button pressed colors
+$color-button-primary-pressed:#fff;
+$color-button-secondary-pressed:#fff;
+$color-button-sucess-pressed:#fff;
+$color-button-warn-pressed:#fff;
+$color-button-error-pressed:#fff;
 
 
-    // button-text normal colors
-    --color-button-text-primary:#fff;
-    --color-button-text-secondary:#fff;
-    --color-button-text-sucess:#fff;
-    --color-button-text-warn:#fff;
-    --color-button-text-error:#fff;
-    // button-text hover colors
-    --color-button-text-primary-hover:#fff;
-    --color-button-text-secondary-hover:#fff;
-    --color-button-text-sucess-hover:#fff;
-    --color-button-text-warn-hover:#fff;
-    --color-button-text-error-hover:#fff;
-    // button-text pressed colors
-    --color-button-text-primary-pressed:#fff;
-    --color-button-text-secondary-pressed:#fff;
-    --color-button-text-sucess-pressed:#fff;
-    --color-button-text-warn-pressed:#fff;
-    --color-button-text-error-pressed:#fff;
-}
+// button-text normal colors
+$color-button-text-primary:#fff;
+$color-button-text-secondary:#fff;
+$color-button-text-sucess:#fff;
+$color-button-text-warn:#fff;
+$color-button-text-error:#fff;
+// button-text hover colors
+$color-button-text-primary-hover:#fff;
+$color-button-text-secondary-hover:#fff;
+$color-button-text-sucess-hover:#fff;
+$color-button-text-warn-hover:#fff;
+$color-button-text-error-hover:#fff;
+// button-text pressed colors
+$color-button-text-primary-pressed:#fff;
+$color-button-text-secondary-pressed:#fff;
+$color-button-text-sucess-pressed:#fff;
+$color-button-text-warn-pressed:#fff;
+$color-button-text-error-pressed:#fff;

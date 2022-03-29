@@ -7,6 +7,8 @@ html, body {
 body {
     position: relative;
     font-family: $font-main;
+    background-color: $color-background-primary;
+    color: $color-text-primary;
     overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
