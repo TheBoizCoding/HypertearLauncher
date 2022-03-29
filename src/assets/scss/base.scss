@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    top: -1.5rem; // if not done, body has a weird offset at the top, need to test if that is chromium only
+}
