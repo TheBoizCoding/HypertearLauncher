@@ -11,10 +11,10 @@ export default defineComponent({
 </script>
 
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+	<HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
 </template>
 
 <style lang="scss">
-  @import './assets/scss/themes/default-theme.scss';
-@import './assets/scss/base.scss';
+	@import './assets/scss/themes/default-theme.scss';
+	@import './assets/scss/base.scss';
 </style>

@@ -10,54 +10,81 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank" rel="noopener">typescript</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <h1>H1 - Hello World</h1>
+  <h2>H2 - Hello World</h2>
+  <h3>H3 - Hello World</h3>
+  <h4>H4 - Hello World</h4>
+  <h5>H5 - Hello World</h5>
+  <h6>H6 - Hello World</h6>
+
+  <button>Hello Button A</button>
+  <input type="button" value="Hello Button B">
+  <br>
+  <input type="time" name="Hello Time" id="">
+  <input type="week" name="Hello Week" id="">
+  <input type="date" name="Hello Date" id="">
+  <br>
+  <input type="checkbox" name="Hello Checkbox" id="">
+  <input type="radio" name="Hello Radio Input" id="">
+  <br>
+  <input type="text" name="Hello Text" placeholder="Hello Text" id="">
+  <input type="password" name="Hello Password" placeholder="Hello Password" id="">
+  <input type="search" name="Hello Search" placeholder="Hello Search" id="">
+  <br>
+  <input type="reset" value="Hello Reset">
+  <input type="submit" value="Hello Submit">
+  <br>
+  <input type="color" value="#00ff80" name="Hello Color" id="">
+  <br>
+  <input type="file" name="Hello File" id="">
+  <br>
+  <br>
+
+  <button class="primary">primary button</button>
+  <button class="secondary">secondary button</button>
+  <button class="sucess">sucess button</button>
+  <button class="warn">warn button</button>
+  <button class="error">error button</button>
+  <br>
+
+  <a href="">Some Anchor Element</a>
+  <p>Some Paragraph with Lorem inside<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eos fugiat distinctio facilis error quibusdam eaque ipsa laboriosam necessitatibus. Molestias accusamus qui incidunt nostrum veritatis fuga architecto molestiae voluptate doloremque!</p>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Lorem ipsum dolor sit amet.</th>
+        <th>Quas aspernatur aliquam aliquid corporis.</th>
+        <th>Vero asperiores voluptatum hic temporibus.</th>
+        <th>Necessitatibus tenetur quo voluptates ea.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Fugit eum nobis modi obcaecati?</td>
+        <td>Obcaecati consequuntur molestias consequatur nisi.</td>
+        <td>Odio consequuntur perferendis doloribus consectetur?</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Architecto natus possimus in culpa.</td>
+        <td>Dolores reiciendis illo blanditiis modi.</td>
+        <td>Sint facere possimus amet at.</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Impedit hic nemo et numquam.</td>
+        <td>At assumenda a porro explicabo.</td>
+        <td>Similique saepe iusto atque laboriosam!</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Quibusdam soluta voluptas expedita facere.</td>
+        <td>Facilis expedita architecto quis velit?</td>
+        <td>Maxime ab nostrum magni cum.</td>
+      </tr>
+    </tbody>
+  </table>
+
 </template>
-
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
