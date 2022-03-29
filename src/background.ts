@@ -5,7 +5,6 @@ import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
 import Options from './types/options'
 import fs from 'fs';
-import {join as pathjoin} from 'path';
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 const DEFAULT_WINDOW_SIZE_X = 1000;
@@ -28,7 +27,7 @@ for(const file of files){
   }
 }
 
-var options:Options;
+let options:Options;
 
 if(foundOptionsFile){
   options = JSON.parse(fs.readFileSync('./options.json').toString());
@@ -45,18 +44,18 @@ if(foundOptionsFile){
 
 async function createWindow() {
   //load window size, if no set in option use defaults
-  var sizeX = options.sizeX || DEFAULT_WINDOW_SIZE_X;
-  var sizeY = options.sizeY || DEFAULT_WINDOW_SIZE_Y;
+  const sizeX = options.sizeX || DEFAULT_WINDOW_SIZE_X;
+  const sizeY = options.sizeY || DEFAULT_WINDOW_SIZE_Y;
 
   //make sure that the values are not to small
   sizeX < MIN_WINDOW_SIZE_X ? MIN_WINDOW_SIZE_X : sizeX;
   sizeY < MIN_WINDOW_SIZE_Y ? MIN_WINDOW_SIZE_Y : sizeY;
 
   //get the screen position for the window and the screen to use
-  var posX:number;
-  var posY:number;
+  let posX:number;
+  let posY:number;
 
-  if(options.posX == NaN || options.posY == NaN) {
+  if(isNaN(options.posX as number) || isNaN(options.posY as number) ) {
     const primaryDisplay = screen.getPrimaryDisplay();
     const {width, height} = primaryDisplay.workAreaSize;
     posX = (width / 2) - (sizeX / 2);
@@ -156,7 +155,8 @@ app.on('ready', async () => {
     try {
       console.log('[DEV] Trying to Install VUE3 Detools Extension')
       await installExtension(VUEJS3_DEVTOOLS)
-    } catch (e: any) {
+      // eslint-disable-next-line
+    } catch (e:any) {
       console.error('Vue Devtools failed to install:', e.toString())
     }
   }
