@@ -5,6 +5,7 @@ import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
 import Options from './types/options'
 import fs from 'fs';
+import {join as pathJoin} from 'path';
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 const DEFAULT_WINDOW_SIZE_X = 1000;
@@ -18,7 +19,7 @@ protocol.registerSchemesAsPrivileged([
 ])
 
 //load settings
-const files = fs.readdirSync('./');
+const files = fs.readdirSync(__dirname);
 let foundOptionsFile = false;
 for(const file of files){
 	if(file === 'options.json'){
@@ -30,7 +31,7 @@ for(const file of files){
 let options:Options;
 
 if(foundOptionsFile){
-	options = JSON.parse(fs.readFileSync('./options.json').toString());
+	options = JSON.parse(fs.readFileSync(pathJoin(__dirname, './options.json')).toString());
 }else{
 	options = {
 		build: -1,
@@ -110,7 +111,7 @@ async function createWindow() {
 		options.posY = pos[1];
 
 		const fileContent = JSON.stringify(options);
-		fs.writeFileSync('./options.json', fileContent);
+		fs.writeFileSync(pathJoin(__dirname,'./options.json'), fileContent);
 	})
 
 	if (process.env.WEBPACK_DEV_SERVER_URL) {
