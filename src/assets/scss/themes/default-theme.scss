@@ -1,7 +1,25 @@
+@font-face {
+    font-family: 'Quicksilver';
+    src: url('./assets/fonts/Quicksilver.ttf');
+}
+$font-styled: 'Quicksilver';
+$font-main: sans-serif;
+$font-code: monospace;
+
+$color-white: #fff;
+$color-black: #000000;
+$color-primary:#00c8ff;
+$color-secondary:#0046ff;
+$color-green:#0f0;
+$color-yellow:#ff0;
+$color-red:#ff0000;
+
+$var: darken($color-red, 5%);
+
 :root {
     
     // background colors
-    --color-background-primary:#fff;
+    --color-background-primary: $color-red;
     --color-background-secondary:#fff;
 
     // text normal colors
