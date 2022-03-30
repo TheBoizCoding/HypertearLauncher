@@ -14,8 +14,8 @@ $font-code: monospace;
 // basic colors
 $color-white: #fff;
 $color-black: #000000;
-$color-primary:#0011ff;
-$color-secondary:#00d9ff;
+$color-primary:#fff;
+$color-secondary:#fff;
 $color-green:#0f0;
 $color-yellow:#ff0;
 $color-red:#ff0000;
@@ -25,13 +25,20 @@ $color-red:#ff0000;
 //###    Advanced    ###
 //######################
 
+/*
+    in scss you can use methods to mix or/and modify colors
+    mix($color-a, $color-b, 50%)
+    desaturate($color, 90%)
+    lighten($color, 15%);
+*/
+
 // background colors
-$color-background-primary: desaturate(mix($color-black, $color-primary, 65%), 90%);
-$color-background-secondary: lighten($color-background-primary, 15%);
+$color-background-primary: #fff;
+$color-background-secondary: #fff;
 
 // text normal colors
 $color-text-primary: $color-white;
-$color-text-secondary: mix($color-white, $color-secondary, 50%);
+$color-text-secondary: #fff;
 // text hover colors
 $color-text-primary-hover:#fff;
 $color-text-secondary-hover:#fff;
