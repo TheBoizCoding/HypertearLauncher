@@ -14,8 +14,11 @@ export default defineComponent({
   <h2>H2 - Hello World</h2>
   <h3>H3 - Hello World</h3>
   <h4>H4 - Hello World</h4>
-  <h5>H5 - Hello World</h5>
-  <h6>H6 - Hello World</h6>
+  <a href="">Some Anchor Element A</a>
+  <a href="" class="secondary">Some Anchor Element</a>
+
+  <p>Some Paragraph with Lorem inside<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eos fugiat distinctio facilis error quibusdam eaque ipsa laboriosam necessitatibus. Molestias accusamus qui incidunt nostrum veritatis fuga architecto molestiae voluptate doloremque!</p>
+  
 
   <br>
   <input type="time" name="Hello Time" id="">
@@ -34,8 +37,6 @@ export default defineComponent({
   <br>
   <input type="color" value="#00ff80" name="Hello Color" id="">
   <br>
-  <input type="file" name="Hello File" id="">
-  <br>
   <br>
 
   <button class="primary">primary button</button>
@@ -45,11 +46,6 @@ export default defineComponent({
   <button class="error">error button</button>
   <br>
   <button class="primary">primary button <br> bigger</button>
-  <br>
-  <a href="">Some Anchor Element A</a>
-  <a href="" class="secondary">Some Anchor Element</a>
-
-  <p>Some Paragraph with Lorem inside<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eos fugiat distinctio facilis error quibusdam eaque ipsa laboriosam necessitatibus. Molestias accusamus qui incidunt nostrum veritatis fuga architecto molestiae voluptate doloremque!</p>
   <br>
   <table>
     <thead>

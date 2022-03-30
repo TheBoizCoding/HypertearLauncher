@@ -6,15 +6,39 @@ html, body {
 }
 body {
     position: relative;
+    font-size: 1rem;
     font-family: $font-main;
     background-color: $color-background-primary;
     color: $color-text;
     overflow: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
+%h {
     font-family: $font-styled;
     font-weight: normal;
     margin: 0;
+}
+h1 {
+    @extend %h;
+    font-size: 2rem;
+}
+h2 {
+    @extend %h;
+
+    font-size: 1.75rem;
+}
+h3 {
+    @extend %h;
+
+    font-size: 1.5rem;
+}
+h4 {
+    @extend %h;
+    font-size: 1.25rem;
+
+}
+a, p {
+    font-size: 1rem;
+    font-family: $font-main;
 }
 a {
     color: $color-text-primary;
@@ -34,15 +58,21 @@ a {
         }
     }
 }
-button {
+
+%input {
     font-family: $font-main;
     font-size: 1rem;
-    padding: 0.25rem;
     margin: 0.125em;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+button {
+    @extend %input;
     background-color: $color-button-primary;
     color: $color-button-text-primary;
-    border-radius: 0.75em;
-    border: solid $color-button-border-primary 0.125rem;
+    border: solid $color-button-border-primary 1px;
     &:hover {
         background-color: $color-button-primary-hover;
         color: $color-button-text-primary-hover;
@@ -108,4 +138,7 @@ button {
             color: $color-button-text-error-pressed;
         }
     }
+}
+input {
+    @extend %input;
 }
