@@ -12,6 +12,7 @@ body {
     color: $color-text;
     overflow: hidden;
 }
+
 %h {
     font-family: $font-styled;
     font-weight: normal;
@@ -36,6 +37,7 @@ h4 {
     font-size: 1.25rem;
 
 }
+
 a, p {
     font-size: 1rem;
     font-family: $font-main;
@@ -67,7 +69,6 @@ a {
     border-radius: 0.25rem;
     border: none;
 }
-
 button {
     @extend %input;
     background-color: $color-button-primary;
@@ -142,3 +143,5 @@ button {
 input {
     @extend %input;
 }
+
+//TODO: Table stylings
