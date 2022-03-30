@@ -8,11 +8,104 @@ body {
     position: relative;
     font-family: $font-main;
     background-color: $color-background-primary;
-    color: $color-text-primary;
+    color: $color-text;
     overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-styled;
     font-weight: normal;
     margin: 0;
+}
+a {
+    color: $color-text-primary;
+    &:hover {
+        color: $color-text-primary-hover;
+    }
+    &:active {
+        color: $color-text-primary-pressed;
+    }
+    &.secondary {
+        color: $color-text-secondary;
+        &:hover {
+            color: $color-text-secondary-hover;
+        }
+        &:active {
+            color: $color-text-secondary-pressed;
+        }
+    }
+}
+button {
+    font-family: $font-main;
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin: 0.125em;
+    background-color: $color-button-primary;
+    color: $color-button-text-primary;
+    border-radius: 0.75em;
+    border: solid $color-button-border-primary 0.125rem;
+    &:hover {
+        background-color: $color-button-primary-hover;
+        color: $color-button-text-primary-hover;
+        border-color: $color-button-border-primary-hover;
+    }
+    &:active {
+        background-color: $color-button-primary-pressed;
+        color: $color-button-text-primary-pressed;
+    }
+    &.secondary {
+        background-color: $color-button-secondary;
+        color: $color-button-text-secondary;
+        border-color: $color-button-border-secondary;
+        &:hover {
+            background-color: $color-button-secondary-hover;
+            color: $color-button-text-secondary-hover;
+            border-color: $color-button-border-secondary-hover;
+        }
+        &:active {
+            background-color: $color-button-secondary-pressed;
+            color: $color-button-text-secondary-pressed;
+        }
+    }
+    &.sucess {
+        background-color: $color-button-sucess;
+        color: $color-button-text-sucess;
+        border-color: $color-button-border-sucess;
+        &:hover {
+            background-color: $color-button-sucess-hover;
+            color: $color-button-text-sucess-hover;
+            border-color: $color-button-border-sucess-hover;
+        }
+        &:active {
+            background-color: $color-button-sucess-pressed;
+            color: $color-button-text-sucess-pressed;
+        }
+    }
+    &.warn {
+        background-color: $color-button-warn;
+        color: $color-button-text-warn;
+        border-color: $color-button-border-warn;
+        &:hover {
+            background-color: $color-button-warn-hover;
+            color: $color-button-text-warn-hover;
+            border-color: $color-button-border-warn-hover;
+        }
+        &:active {
+            background-color: $color-button-warn-pressed;
+            color: $color-button-text-warn-pressed;
+        }
+    }
+    &.error {
+        background-color: $color-button-error;
+        color: $color-button-text-error;
+        border-color: $color-button-border-error;
+        &:hover {
+            background-color: $color-button-error-hover;
+            color: $color-button-text-error-hover;
+            border-color: $color-button-border-error-hover;
+        }
+        &:active {
+            background-color: $color-button-error-pressed;
+            color: $color-button-text-error-pressed;
+        }
+    }
 }

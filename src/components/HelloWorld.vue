@@ -17,8 +17,6 @@ export default defineComponent({
   <h5>H5 - Hello World</h5>
   <h6>H6 - Hello World</h6>
 
-  <button>Hello Button A</button>
-  <input type="button" value="Hello Button B">
   <br>
   <input type="time" name="Hello Time" id="">
   <input type="week" name="Hello Week" id="">
@@ -46,8 +44,11 @@ export default defineComponent({
   <button class="warn">warn button</button>
   <button class="error">error button</button>
   <br>
+  <button class="primary">primary button <br> bigger</button>
+  <br>
+  <a href="">Some Anchor Element A</a>
+  <a href="" class="secondary">Some Anchor Element</a>
 
-  <a href="">Some Anchor Element</a>
   <p>Some Paragraph with Lorem inside<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eos fugiat distinctio facilis error quibusdam eaque ipsa laboriosam necessitatibus. Molestias accusamus qui incidunt nostrum veritatis fuga architecto molestiae voluptate doloremque!</p>
   <br>
   <table>
