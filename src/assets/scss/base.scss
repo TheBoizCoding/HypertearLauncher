@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -35,12 +36,13 @@ h3 {
 h4 {
     @extend %h;
     font-size: 1.25rem;
-
 }
 
-a, p {
+a,
+p {
     font-size: 1rem;
     font-family: $font-main;
+    font-weight: normal;
 }
 a {
     color: $color-text-primary;
@@ -66,7 +68,7 @@ a {
     font-size: 1rem;
     margin: 0.125em;
     padding: 0.25rem;
-    border-radius: 0.25rem;
+    border-radius: $border-radius;
     border: none;
 }
 button {
@@ -144,4 +146,49 @@ input {
     @extend %input;
 }
 
-//TODO: Table stylings
+%table-element {
+    height: 3rem;
+    padding: 0.5rem;
+    border: $border-thickness solid $color-table-border;
+    border-bottom: none;
+    border-right: none;
+    text-align: left;
+    vertical-align: middle;
+}
+table {
+    font-family: $font-main;
+    font-weight: normal;
+    & {
+        border: none;
+        border-collapse: separate;
+        border-spacing: 0;
+        padding: 0;
+    }
+    th {
+        @extend %table-element;
+        font-weight: bold;
+        background-color: $color-table-header;
+        &:first-child {
+            border-top-left-radius: $border-radius;
+        }
+        &:last-child {
+            border-top-right-radius: $border-radius;
+            border-right: $border-thickness solid $color-table-border;
+        }
+    }
+    td {
+        @extend %table-element;
+        &:last-child {
+            border-right: $border-thickness solid $color-table-border;
+        }
+    }
+    tr:last-child td {
+        border-bottom: $border-thickness solid $color-table-border;
+        &:first-child {
+            border-bottom-left-radius: $border-radius;
+        }
+        &:last-child {
+            border-bottom-right-radius: $border-radius;
+        }
+    }
+}

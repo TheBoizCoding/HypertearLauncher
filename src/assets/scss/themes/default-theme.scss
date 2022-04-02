@@ -4,23 +4,26 @@
 
 // fonts
 @font-face {
-    font-family: 'Quicksilver';
-    src: url('./assets/fonts/Quicksilver.ttf');
+    font-family: "Quicksilver";
+    src: url("./assets/fonts/Quicksilver.ttf");
 }
-$font-styled: 'Quicksilver';
+$font-styled: "Quicksilver";
 $font-main: sans-serif;
 $font-code: monospace;
+
+//border
+$border-radius: 0.5rem;
+$border-thickness: 0.125rem;
 
 // basic colors
 $color-white: #e0e0e0;
 $color-black: #202020;
-$color-primary:hsl(200, 100%, 35%);
-$color-secondary:hsl(225, 100%, 35%);
+$color-primary: hsl(200, 100%, 35%);
+$color-secondary: hsl(225, 100%, 35%);
 
-$color-green:hsl(120, 100%, 35%);
-$color-yellow:hsl(60, 100%, 35%);
-$color-red:hsl(0, 100%, 35%);
-
+$color-green: hsl(120, 100%, 35%);
+$color-yellow: hsl(60, 100%, 35%);
+$color-red: hsl(0, 100%, 35%);
 
 //######################
 //###    Advanced    ###
@@ -55,11 +58,11 @@ $color-button-sucess: lighten($color-green, 5%);
 $color-button-warn: lighten($color-yellow, 5%);
 $color-button-error: lighten($color-red, 5%);
 // button hover colors
-$color-button-primary-hover:lighten($color-button-primary, 15%);
-$color-button-secondary-hover:lighten($color-button-secondary, 15%);
-$color-button-sucess-hover:lighten($color-button-sucess, 15%);
-$color-button-warn-hover:lighten($color-button-warn, 15%);
-$color-button-error-hover:lighten($color-button-error, 15%);
+$color-button-primary-hover: lighten($color-button-primary, 15%);
+$color-button-secondary-hover: lighten($color-button-secondary, 15%);
+$color-button-sucess-hover: lighten($color-button-sucess, 15%);
+$color-button-warn-hover: lighten($color-button-warn, 15%);
+$color-button-error-hover: lighten($color-button-error, 15%);
 // button pressed colors
 $color-button-primary-pressed: $color-button-primary;
 $color-button-secondary-pressed: $color-button-secondary;
@@ -80,7 +83,6 @@ $color-button-border-sucess-hover: lighten($color-button-border-sucess, 10%);
 $color-button-border-warn-hover: lighten($color-button-border-warn, 10%);
 $color-button-border-error-hover: lighten($color-button-border-error, 10%);
 
-
 // button-text normal colors
 $color-button-text-primary: $color-black;
 $color-button-text-secondary: $color-white;
@@ -88,14 +90,18 @@ $color-button-text-sucess: $color-black;
 $color-button-text-warn: $color-black;
 $color-button-text-error: $color-white;
 // button-text hover colors
-$color-button-text-primary-hover:$color-button-text-primary;
-$color-button-text-secondary-hover:$color-button-text-secondary;
-$color-button-text-sucess-hover:$color-button-text-sucess;
-$color-button-text-warn-hover:$color-button-text-warn;
-$color-button-text-error-hover:$color-button-text-error;
+$color-button-text-primary-hover: $color-button-text-primary;
+$color-button-text-secondary-hover: $color-button-text-secondary;
+$color-button-text-sucess-hover: $color-button-text-sucess;
+$color-button-text-warn-hover: $color-button-text-warn;
+$color-button-text-error-hover: $color-button-text-error;
 // button-text pressed colors
-$color-button-text-primary-pressed:$color-button-text-primary;
-$color-button-text-secondary-pressed:$color-button-text-secondary;
-$color-button-text-sucess-pressed:$color-button-text-sucess;
-$color-button-text-warn-pressed:$color-button-text-warn;
-$color-button-text-error-pressed:$color-button-text-error;
+$color-button-text-primary-pressed: $color-button-text-primary;
+$color-button-text-secondary-pressed: $color-button-text-secondary;
+$color-button-text-sucess-pressed: $color-button-text-sucess;
+$color-button-text-warn-pressed: $color-button-text-warn;
+$color-button-text-error-pressed: $color-button-text-error;
+
+// table colors
+$color-table-border: $color-primary;
+$color-table-header: darken($color-primary, 15%);
