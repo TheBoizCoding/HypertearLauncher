@@ -11,11 +11,18 @@ $font-styled: "Quicksilver";
 $font-main: sans-serif;
 $font-code: monospace;
 
-//border
+//padding and margin
+$input-margin: 0.125rem;
+$input-padding: 0.25rem;
+$table-padding: 0.5rem;
+
+// borders
 $border-radius: 0.5rem;
 $border-thickness: 0.125rem;
 
-// basic colors
+//#######################
+//###  Colors Simple  ###
+//#######################
 $color-white: #e0e0e0;
 $color-black: #202020;
 $color-primary: hsl(200, 100%, 35%);
@@ -25,9 +32,9 @@ $color-green: hsl(120, 100%, 35%);
 $color-yellow: hsl(60, 100%, 35%);
 $color-red: hsl(0, 100%, 35%);
 
-//######################
-//###    Advanced    ###
-//######################
+//#######################
+//### Colors Advanced ###
+//#######################
 
 /*
     in scss you can use methods to mix or/and modify colors

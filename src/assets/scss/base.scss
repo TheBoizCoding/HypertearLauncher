@@ -66,8 +66,8 @@ a {
 %input {
     font-family: $font-main;
     font-size: 1rem;
-    margin: 0.125em;
-    padding: 0.25rem;
+    margin: $input-margin;
+    padding: $input-padding;
     border-radius: $border-radius;
     border: none;
 }
@@ -148,7 +148,7 @@ input {
 
 %table-element {
     height: 3rem;
-    padding: 0.5rem;
+    padding: $table-padding;
     border: $border-thickness solid $color-table-border;
     border-bottom: none;
     border-right: none;
